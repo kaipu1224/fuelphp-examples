@@ -7,6 +7,7 @@
     <meta name="author" content="">
     <title><?php echo $title; ?></title>
     <?php echo Asset::css('bootstrap.css'); ?>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -31,6 +32,7 @@
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
     <script>
+
       function logout(){
         document.template_form.action = "<?php echo Uri::base();?>login/logout";
         document.template_form.submit();
@@ -59,6 +61,7 @@
                   <ul class="dropdown-menu">
                     <li><?php echo Html::anchor('user/index/'.'', 'Pagination Sample'); ?></li>
                     <li><?php echo Html::anchor('upload/index/'.'', 'File Upload Sample'); ?></li>
+                    <li><?php echo Html::anchor('qrcode/index/'.'', 'jQuery-QRCode Sample'); ?></li>
                   </ul>
                 </li>
               </ul>
@@ -84,7 +87,6 @@
         </div>
       </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <?php echo Asset::js('bootstrap.min.js'); ?>
     <?php echo Asset::js('bootstrap-dropdown.js'); ?>
 </body>

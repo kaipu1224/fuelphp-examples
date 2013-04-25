@@ -81,8 +81,8 @@ return array(
 	 * Localization & internationalization settings
 	 */
 	'language'           => 'ja', // Default language
-	// 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
-	// 'locale'             => 'en_US', // PHP set_locale() setting, null to not set
+	'language_fallback'  => 'en', // Fallback language when file isn't available for default language
+	'locale'             => 'ja_JP.utf8', // PHP set_locale() setting, null to not set
 
 	/**
 	 * Internal string encoding charset
@@ -108,8 +108,8 @@ return array(
 	 * server_gmt_offset	in seconds the server offset from gmt timestamp when time() is used
 	 * default_timezone		optional, if you want to change the server's default timezone
 	 */
-	// 'server_gmt_offset'  => 0,
-	// 'default_timezone'   => null,
+	'server_gmt_offset'  => 0,
+	'default_timezone'   => 'Asia/Tokyo',
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:
